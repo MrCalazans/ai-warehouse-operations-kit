@@ -139,7 +139,11 @@ A IA apresentou uma abordagem com cinco etapas: analisar pedidos e prioridades; 
 
 **Checkpoint humano:** o plano inicial foi aprovado explicitamente pelo responsável pelo teste antes da geração do planejamento detalhado.
 
-**Evidência visual do Teste 1 — plano e aprovação:** captura autêntica da conversa — **aguardando arquivo fornecido pelo participante**. Não há imagem inserida.
+**Evidências visuais do Teste 1 — plano inicial e aprovação:**
+
+![Teste 1 — Plano inicial apresentado pela IA](evidencias/teste1-plano-inicial.png)
+
+![Teste 1 — Aprovação humana da abordagem](evidencias/teste1-aprovacao-plano.png)
 
 ### O Resultado
 
@@ -163,7 +167,11 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 **Limite do resultado:** o planejamento é apenas uma proposta documental. Não houve separação de pedidos, conferência física, expedição ou atualização de WMS/ERP.
 
-**Evidência visual do Teste 1 — resultado e validação:** captura autêntica da conversa — **aguardando arquivo fornecido pelo participante**. Não há imagem inserida.
+**Evidência visual do Teste 1 — avaliação final:**
+
+![Teste 1 — Avaliação humana com ressalvas](evidencias/teste1-avaliacao-final.png)
+
+*A captura registra a avaliação final e parte do resultado; o relatório operacional detalhado permanece documentado em texto.*
 
 **Teste 2 — Conferência e Controle de Estoque (realizado em conversa, cenário fictício).**
 
@@ -189,10 +197,16 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 **Limite do resultado:** trata-se de análise documental de números fornecidos para fins acadêmicos. Não houve acesso a WMS/ERP, conferência física, movimentação de mercadorias nem auditoria operacional.
 
-**Evidências visuais do Teste 2:** capturas autênticas do plano inicial e aprovação, do relatório detalhado e da avaliação com ressalvas — **aguardando arquivos fornecidos pelo participante**. Não há imagens inseridas.
+**Evidências visuais do Teste 2 — aprovação e avaliação:**
+
+![Teste 2 — Aprovação humana do plano inicial](evidencias/teste2-aprovacao-plano.png)
+
+![Teste 2 — Avaliação final com ressalvas](evidencias/teste2-avaliacao-final.png)
+
+*As capturas registram a autorização e a avaliação; a análise detalhada da divergência está documentada acima em texto.*
 
 ### Como Foi para Você
 
 A IA auxiliou na estruturação dos prompts, dos planos e dos relatórios, sem que tenha sido medido tempo economizado. A conferência mostrou que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
 
-**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. As capturas de tela dos planos, aprovações, resultados e avaliações ainda não foram fornecidas nem inseridas. A aplicação em uma tarefa real, prevista no enunciado da DIO, ainda não foi comprovada. Não houve execução física.
+**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. Cinco capturas autênticas dos planos e das avaliações foram adicionadas à pasta `evidencias` e incorporadas a este README. Capturas adicionais dos relatórios detalhados podem complementar a apresentação. A aplicação em uma tarefa real, prevista no enunciado da DIO, ainda não foi comprovada. Não houve execução física.
