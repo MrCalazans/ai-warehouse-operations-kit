@@ -239,10 +239,22 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 **Resultado:** inventário doméstico inicial registrado e validado pelo participante. O relatório pode servir como referência para futuras contagens, desde que seja mantido o mesmo critério de unidade de registro. Não houve ajuste de saldo histórico, pois não existia base anterior para comparação.
 
-**Evidência visual da Etapa 3:** a conversa contém a declaração de contagem, a análise e a validação final; **captura de tela específica ainda não foi adicionada** à pasta `evidencias`. As cinco capturas existentes correspondem somente aos Testes 1 e 2.
+**Evidências visuais da Etapa 3 — inventário, validação e status:**
+
+![Etapa 3 — Ficha de inventário doméstico com cinco categorias e total de 34 itens contabilizados](evidencias/teste3-ficha-inventario.png)
+
+*Ficha com os dados informados pelo participante e a conferência matemática. O total de 34 representa embalagens/itens registrados, não sabonetes individuais.*
+
+![Etapa 3 — Aprovação humana do inventário e observação sobre a embalagem aberta de sabonetes](evidencias/teste3-validacao-final.png)
+
+*Formulário com a opção “Aprovado” selecionada e a observação sobre a embalagem de sabonetes aberta. A captura foi feita antes do envio final do formulário; a aprovação definitiva também foi expressamente registrada pelo participante na conversa.*
+
+![Etapa 3 — Situação do projeto após validação da aplicação doméstica](evidencias/teste3-status-projeto.png)
+
+*Resumo de acompanhamento do projeto. A indicação de evidência visual pendente reflete o momento da captura, anterior à inclusão destas imagens no repositório.*
 
 ### Como Foi para Você
 
 A IA auxiliou na estruturação dos prompts, dos planos e dos relatórios, sem que tenha sido medido tempo economizado. Na aplicação doméstica real, o participante executou a contagem e validou os números, enquanto a IA consolidou os registros e apontou a importância de distinguir embalagens de unidades internas. A conferência mostrou que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
 
-**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. Cinco capturas autênticas dos planos e das avaliações foram adicionadas à pasta `evidencias` e incorporadas a este README. Capturas adicionais dos relatórios detalhados podem complementar a apresentação. A Etapa 3 documenta uma aplicação doméstica real com contagem física realizada e validada pelo participante; ainda falta anexar uma captura de tela específica dessa etapa. Não houve execução física nos Testes 1 e 2, nem execução física pela IA.
+**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. Oito capturas de tela foram adicionadas à pasta `evidencias` e incorporadas a este README: cinco dos Testes 1 e 2 e três da Etapa 3. Capturas adicionais dos relatórios detalhados podem complementar a apresentação. A Etapa 3 documenta uma aplicação doméstica real com contagem física realizada e validada pelo participante; suas três capturas de tela já estão anexadas e identificadas nesta seção. Não houve execução física nos Testes 1 e 2, nem execução física pela IA.
