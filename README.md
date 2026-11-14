@@ -50,9 +50,9 @@ Você não precisa instalar nada nem saber programar. Tudo acontece no navegador
 
 Este projeto aplica inteligência artificial ao planejamento de operações de armazém e à conferência de estoque. Os cenários são **fictícios e acadêmicos**. Os testes consistem em interações reais com a IA; não houve execução física, alteração de estoque nem integração com sistemas de gestão.
 
-### Minha Tarefa Real
+### Tarefa escolhida e natureza da aplicação
 
-Escolhi o planejamento de um turno de um centro de distribuição como exercício prático de delegação. O trabalho envolve priorizar pedidos, distribuir funções, identificar riscos e preparar pontos de acompanhamento. O objetivo é avaliar como a IA pode estruturar esse planejamento e quais informações ainda precisam de confirmação humana.
+Escolhi o planejamento de um turno de um centro de distribuição como **exercício acadêmico de delegação**, com priorização de pedidos, distribuição de funções, identificação de riscos e checkpoints. O segundo exercício aborda a análise documental de divergência de estoque. **Ambos utilizam dados fictícios**; não constituem execução de uma tarefa real da semana. O enunciado original da DIO solicita uma tarefa real, requisito que ainda precisa ser complementado com uma aplicação autêntica ou esclarecido com a organização do desafio. Não foi registrada aplicação real neste repositório.
 
 ### Meus Atalhos
 
@@ -69,7 +69,7 @@ Separe fatos, premissas e recomendações. Não invente produtividade,
 não garanta prazos sem dados e não autorize operações inseguras.
 ```
 
-**Atalho 2 — Conferência e Controle de Estoque:** [abrir prompt completo](01-prompts/07-conferencia-controle-estoque.md). Mantém fixos o cálculo da divergência, a investigação de hipóteses e a proibição de ajustes automáticos. Variam SKU, saldos, localização e movimentações. **Situação:** testado; aprovado com ressalvas.
+**Atalho 2 — Conferência e Controle de Estoque:** [abrir prompt completo](01-prompts/07-conferencia-controle-estoque.md). Mantém fixos o cálculo da divergência, a investigação de hipóteses e a proibição de ajustes automáticos. Variam SKU, saldos, localização e movimentações. **Situação:** testado; aprovado com ressalvas. O prompt completo agora exige aprovação do plano antes da análise detalhada.
 
 ```text
 Atue como assistente de conferência de estoque.
@@ -77,6 +77,7 @@ Para cada SKU, compare a contagem física com o saldo do sistema.
 Calcule a diferença (físico - sistema), identifique hipóteses não confirmadas
 e proponha um checklist de recontagem e investigação.
 Não invente movimentações, não atribua culpa e não ajuste o estoque.
+Antes da análise detalhada, apresente o plano e aguarde aprovação.
 ```
 
 ### Minha Delegação
@@ -106,13 +107,39 @@ riscos, checkpoints e critérios de validação humana.
 Antes de começar, apresente o plano de abordagem e aguarde minha aprovação.
 ```
 
+**Delegação do Teste 2 — Conferência e Controle de Estoque:**
+
+```text
+OBJETIVO
+Analisar documentalmente uma divergência fictícia de estoque e preparar
+hipóteses, checklist de verificação, pendências e relatório.
+
+CONTEXTO
+SKU CX-101; endereço A-03; saldo do sistema informado: 80 unidades;
+contagem física informada: 76 unidades; movimentações desconhecidas.
+
+RECURSOS
+Somente os dados fictícios fornecidos e o Atalho 2.
+
+LIMITES
+Não inventar movimentações ou causas; não atribuir responsabilidades;
+não acessar WMS/ERP; não executar recontagem nem ajustar saldos.
+
+SUCESSO
+Calcular corretamente a divergência; separar fatos de hipóteses;
+produzir checklist, pendências e relatório sujeito a validação humana.
+
+Antes de produzir a análise detalhada, apresente o plano de abordagem
+e aguarde minha aprovação.
+```
+
 ### O Plano da IA
 
 A IA apresentou uma abordagem com cinco etapas: analisar pedidos e prioridades; verificar capacidade operacional; propor distribuição de funções; estabelecer checkpoints; e preparar relatório. Destacou a ausência de informações sobre produtividade, prazos, equipamentos, pausas e habilitações.
 
 **Checkpoint humano:** o plano inicial foi aprovado explicitamente pelo responsável pelo teste antes da geração do planejamento detalhado.
 
-**Evidência visual:** captura da conversa com o plano inicial e a aprovação — **pendente de inserção**.
+**Evidência visual do Teste 1 — plano e aprovação:** captura autêntica da conversa — **aguardando arquivo fornecido pelo participante**. Não há imagem inserida.
 
 ### O Resultado
 
@@ -136,7 +163,7 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 **Limite do resultado:** o planejamento é apenas uma proposta documental. Não houve separação de pedidos, conferência física, expedição ou atualização de WMS/ERP.
 
-**Evidência visual:** captura do planejamento detalhado e da avaliação humana — **pendente de inserção**.
+**Evidência visual do Teste 1 — resultado e validação:** captura autêntica da conversa — **aguardando arquivo fornecido pelo participante**. Não há imagem inserida.
 
 **Teste 2 — Conferência e Controle de Estoque (realizado em conversa, cenário fictício).**
 
@@ -162,10 +189,10 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 **Limite do resultado:** trata-se de análise documental de números fornecidos para fins acadêmicos. Não houve acesso a WMS/ERP, conferência física, movimentação de mercadorias nem auditoria operacional.
 
-**Evidências visuais do Teste 2:** captura do plano inicial, da aprovação humana, do relatório detalhado e da avaliação com ressalvas — **pendentes de inserção**.
+**Evidências visuais do Teste 2:** capturas autênticas do plano inicial e aprovação, do relatório detalhado e da avaliação com ressalvas — **aguardando arquivos fornecidos pelo participante**. Não há imagens inseridas.
 
 ### Como Foi para Você
 
-O uso da IA reduziu o trabalho manual de estruturar os prompts e o planejamento. A conferência mostrou, porém, que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
+A IA auxiliou na estruturação dos prompts, dos planos e dos relatórios, sem que tenha sido medido tempo economizado. A conferência mostrou que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
 
-**Situação da entrega:** dois atalhos publicados e dois testes realizados e avaliados com ressalvas. Capturas de tela dos planos, aprovações, resultados e avaliações ainda pendentes de inserção. Não houve execução física.
+**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. As capturas de tela dos planos, aprovações, resultados e avaliações ainda não foram fornecidas nem inseridas. A aplicação em uma tarefa real, prevista no enunciado da DIO, ainda não foi comprovada. Não houve execução física.
