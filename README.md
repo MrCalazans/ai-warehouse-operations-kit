@@ -48,11 +48,11 @@ Você não precisa instalar nada nem saber programar. Tudo acontece no navegador
 
 ## Minha Entrega
 
-Este projeto aplica inteligência artificial ao planejamento de operações de armazém e à conferência de estoque. Os cenários são **fictícios e acadêmicos**. Os testes consistem em interações reais com a IA; não houve execução física, alteração de estoque nem integração com sistemas de gestão.
+Este projeto aplica inteligência artificial ao planejamento de operações de armazém e à conferência de estoque. **Os Testes 1 e 2 são simulações acadêmicas**, sem execução física. A **Etapa 3 é uma aplicação doméstica real**, cuja contagem física foi realizada e declarada pelo participante, com análise documental pela IA. Não houve integração com sistemas de gestão ou alteração automatizada de saldos.
 
 ### Tarefa escolhida e natureza da aplicação
 
-Escolhi o planejamento de um turno de um centro de distribuição como **exercício acadêmico de delegação**, com priorização de pedidos, distribuição de funções, identificação de riscos e checkpoints. O segundo exercício aborda a análise documental de divergência de estoque. **Ambos utilizam dados fictícios**; não constituem execução de uma tarefa real da semana. O enunciado original da DIO solicita uma tarefa real, requisito que ainda precisa ser complementado com uma aplicação autêntica ou esclarecido com a organização do desafio. Não foi registrada aplicação real neste repositório.
+Escolhi o planejamento de um turno de um centro de distribuição como **exercício acadêmico de delegação**, com priorização de pedidos, distribuição de funções, identificação de riscos e checkpoints. O segundo exercício aborda a análise documental de divergência de estoque. **Ambos utilizam dados fictícios** e não constituem execução física. Para complementar o requisito de tarefa real, o participante realizou uma **conferência doméstica inicial de cinco categorias de produtos**, documentada na seção **Etapa 3 — Aplicação real** abaixo. A execução física é declarada pelo participante; a IA apenas estruturou e analisou o relatório.
 
 ### Meus Atalhos
 
@@ -205,8 +205,44 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 *As capturas registram a autorização e a avaliação; a análise detalhada da divergência está documentada acima em texto.*
 
+### Etapa 3 — Aplicação real: inventário doméstico inicial
+
+**Natureza da atividade:** o participante realizou pessoalmente uma contagem física de produtos nas **gavetas do banheiro** e forneceu os resultados à IA. Diferentemente dos Testes 1 e 2, este registro se refere a uma tarefa doméstica real, conforme declaração e validação humana. A IA não presenciou a contagem, não manipulou objetos e não acessou sistemas de estoque.
+
+**Objetivo:** criar um registro inicial de cinco categorias de produtos de higiene e cuidados pessoais, seguindo os princípios do [Atalho 2 — Conferência e Controle de Estoque](01-prompts/07-conferencia-controle-estoque.md).
+
+**Plano e limites:** selecionar cinco categorias, contar fisicamente os itens, informar quantidades, consolidar os dados e submeter o relatório à validação humana. Não havia registro anterior; por isso, **não é possível calcular divergência ou acuracidade em relação a um saldo histórico**.
+
+**Contagem informada pelo participante:**
+
+| Código interno | Categoria | Quantidade informada | Unidade de registro |
+|---|---|---:|---|
+| DOM-001 | Sabonete | 25 | Embalagens |
+| DOM-002 | Shampoo | 4 | Embalagens/frascos |
+| DOM-003 | Condicionador | 2 | Embalagens/frascos |
+| DOM-004 | Creme | 2 | Embalagens |
+| DOM-005 | Protetor solar | 1 | Embalagem/frasco |
+| **Total** | **5 categorias** | **34** | **Embalagens ou itens contabilizados, não unidades internas de produto** |
+
+**Cálculo conferido:** 25 + 4 + 2 + 2 + 1 = **34 embalagens/itens contabilizados**.
+
+**Observação específica sobre os sabonetes:** segundo o participante, cada embalagem de sabonete contém normalmente **6 unidades**, mas **uma das 25 embalagens estava aberta e continha apenas 5 unidades**. Caso as outras 24 embalagens estejam completas, o total teórico seria **149 sabonetes individuais** (24 × 6 + 5); entretanto, a integridade das outras 24 embalagens **não foi confirmada individualmente** nos dados fornecidos. Portanto, **149 não é apresentado como contagem física confirmada**. O total de 34 também não representa 34 sabonetes individuais.
+
+**Validação humana final:** **aprovado** pelo participante, que confirmou expressamente:
+
+1. As quantidades registradas correspondem à contagem física realizada por ele.
+2. Cada embalagem foi contabilizada apenas uma vez.
+3. A embalagem aberta pertence à categoria sabonete.
+4. Não existia registro anterior de estoque.
+5. A soma de 34 embalagens/itens foi conferida.
+6. Todas as gavetas incluídas no escopo da atividade foram verificadas.
+
+**Resultado:** inventário doméstico inicial registrado e validado pelo participante. O relatório pode servir como referência para futuras contagens, desde que seja mantido o mesmo critério de unidade de registro. Não houve ajuste de saldo histórico, pois não existia base anterior para comparação.
+
+**Evidência visual da Etapa 3:** a conversa contém a declaração de contagem, a análise e a validação final; **captura de tela específica ainda não foi adicionada** à pasta `evidencias`. As cinco capturas existentes correspondem somente aos Testes 1 e 2.
+
 ### Como Foi para Você
 
-A IA auxiliou na estruturação dos prompts, dos planos e dos relatórios, sem que tenha sido medido tempo economizado. A conferência mostrou que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
+A IA auxiliou na estruturação dos prompts, dos planos e dos relatórios, sem que tenha sido medido tempo economizado. Na aplicação doméstica real, o participante executou a contagem e validou os números, enquanto a IA consolidou os registros e apontou a importância de distinguir embalagens de unidades internas. A conferência mostrou que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
 
-**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. Cinco capturas autênticas dos planos e das avaliações foram adicionadas à pasta `evidencias` e incorporadas a este README. Capturas adicionais dos relatórios detalhados podem complementar a apresentação. A aplicação em uma tarefa real, prevista no enunciado da DIO, ainda não foi comprovada. Não houve execução física.
+**Situação da entrega:** dois atalhos publicados e dois testes acadêmicos realizados e avaliados com ressalvas. Cinco capturas autênticas dos planos e das avaliações foram adicionadas à pasta `evidencias` e incorporadas a este README. Capturas adicionais dos relatórios detalhados podem complementar a apresentação. A Etapa 3 documenta uma aplicação doméstica real com contagem física realizada e validada pelo participante; ainda falta anexar uma captura de tela específica dessa etapa. Não houve execução física nos Testes 1 e 2, nem execução física pela IA.
