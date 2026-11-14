@@ -41,4 +41,4 @@ Antes de produzir o plano detalhado, apresente sua abordagem e aguarde minha apr
 
 Turno de 8 horas; 6 colaboradores; 120 pedidos pendentes, sendo 30 prioritários. Não foram informados produtividade por pessoa, horários-limite, pausas, habilitações ou equipamentos. Solicite os dados faltantes e proponha uma abordagem inicial sem afirmar que 120 pedidos serão concluídos.
 
-**Evidência do teste:** inserir posteriormente captura real da interação e anotar os ajustes realizados.
+**Evidências do Teste 1:** [plano inicial](../evidencias/teste1-plano-inicial.png), [aprovação do plano](../evidencias/teste1-aprovacao-plano.png) e [avaliação final](../evidencias/teste1-avaliacao-final.png). O teste foi acadêmico e recebeu aprovação com ressalvas; consulte o [relatório e as pendências no README](../README.md#o-resultado).
