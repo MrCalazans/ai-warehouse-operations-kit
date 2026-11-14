@@ -69,7 +69,7 @@ Separe fatos, premissas e recomendações. Não invente produtividade,
 não garanta prazos sem dados e não autorize operações inseguras.
 ```
 
-**Atalho 2 — Conferência e Controle de Estoque:** [abrir prompt completo](01-prompts/07-conferencia-controle-estoque.md). Mantém fixos o cálculo da divergência, a investigação de hipóteses e a proibição de ajustes automáticos. Variam SKU, saldos, localização e movimentações. **Situação:** preparado; teste ainda pendente.
+**Atalho 2 — Conferência e Controle de Estoque:** [abrir prompt completo](01-prompts/07-conferencia-controle-estoque.md). Mantém fixos o cálculo da divergência, a investigação de hipóteses e a proibição de ajustes automáticos. Variam SKU, saldos, localização e movimentações. **Situação:** testado; aprovado com ressalvas.
 
 ```text
 Atue como assistente de conferência de estoque.
@@ -138,10 +138,34 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 **Evidência visual:** captura do planejamento detalhado e da avaliação humana — **pendente de inserção**.
 
-**Próximo teste:** utilizar o Atalho 2 com o SKU fictício CX-101, saldo no sistema de 80 unidades, contagem física de 76 unidades e localização A-03. A diferença esperada é -4 unidades; sua causa é desconhecida e não deverá ser inventada.
+**Teste 2 — Conferência e Controle de Estoque (realizado em conversa, cenário fictício).**
+
+**Dados utilizados:** SKU CX-101, localização A-03, saldo informado no sistema de 80 unidades e contagem física informada de 76 unidades. Histórico de movimentações desconhecido.
+
+**Plano apresentado antes da execução:** validação dos dados, proposta de recontagem independente, investigação de hipóteses, checklist e relatório de divergência. O responsável pelo teste **aprovou explicitamente** essa abordagem antes da análise detalhada.
+
+**Resultado documental:** diferença calculada como 76 − 80 = **−4 unidades**, correspondente a 5% do saldo informado. A IA apresentou hipóteses não confirmadas (erro de contagem, movimentação não registrada, endereço incorreto, unidade de medida, avaria ou identificação) e propôs recontagem independente, consulta aos registros e conferência de endereços. Nenhuma causa foi declarada comprovada; nenhum saldo foi ajustado.
+
+**Validação humana registrada:** **aprovado com ressalvas**. Observação do avaliador: “O cálculo e o relatório estão corretos, mas a recontagem física, a consulta às movimentações e a verificação dos endereços permanecem pendentes por se tratar de uma simulação acadêmica.”
+
+| Critério de validação do Teste 2 | Resultado |
+|---|---|
+| Cálculo da divergência | Atendido: −4 unidades |
+| Identificação dos dados fictícios | Atendido: SKU CX-101, endereço A-03 |
+| Separação entre fatos e hipóteses | Atendido |
+| Checklist e relatório documental | Atendido |
+| Unidade de medida e cadastro confirmados | Pendente |
+| Recontagem física independente | Não realizada |
+| Histórico de movimentações consultado | Não realizado |
+| Inspeção de endereços relacionados | Não realizada |
+| Alteração de saldo | Não realizada; depende de investigação e autorização humana |
+
+**Limite do resultado:** trata-se de análise documental de números fornecidos para fins acadêmicos. Não houve acesso a WMS/ERP, conferência física, movimentação de mercadorias nem auditoria operacional.
+
+**Evidências visuais do Teste 2:** captura do plano inicial, da aprovação humana, do relatório detalhado e da avaliação com ressalvas — **pendentes de inserção**.
 
 ### Como Foi para Você
 
 O uso da IA reduziu o trabalho manual de estruturar os prompts e o planejamento. A conferência mostrou, porém, que uma resposta organizada não significa que todos os dados operacionais tenham sido verificados. O principal aprendizado até aqui é manter a aprovação e a validação humana como etapas distintas da geração do conteúdo.
 
-**Situação da entrega:** primeiro teste realizado e avaliado com ressalvas; segundo teste e capturas de tela ainda pendentes.
+**Situação da entrega:** dois atalhos publicados e dois testes realizados e avaliados com ressalvas. Capturas de tela dos planos, aprovações, resultados e avaliações ainda pendentes de inserção. Não houve execução física.
