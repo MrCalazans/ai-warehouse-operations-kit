@@ -50,6 +50,16 @@ Você não precisa instalar nada nem saber programar. Tudo acontece no navegador
 
 Este projeto aplica inteligência artificial ao planejamento de operações de armazém e à conferência de estoque. **Os Testes 1 e 2 são simulações acadêmicas**, sem execução física. A **Etapa 3 é uma aplicação doméstica real**, cuja contagem física foi realizada e declarada pelo participante, com análise documental pela IA. Não houve integração com sistemas de gestão ou alteração automatizada de saldos.
 
+### Resumo da entrega
+
+| Componente | Evidência | Natureza |
+|---|---|---|
+| [Atalho 1 — Planejamento operacional](01-prompts/06-planejamento-operacional-armazem.md) | Teste 1 com plano e avaliação humana | Simulação acadêmica |
+| [Atalho 2 — Conferência de estoque](01-prompts/07-conferencia-controle-estoque.md) | Teste 2 com análise e avaliação humana | Simulação acadêmica |
+| [Inventário doméstico inicial](#etapa-3--aplicação-real-inventário-doméstico-inicial) | Contagem declarada, relatório e validação final | Aplicação real realizada pelo participante |
+
+**Resultado da aplicação real:** cinco categorias conferidas nas gavetas do banheiro; **34 embalagens/itens contabilizados** (25 embalagens de sabonete, 4 shampoos, 2 condicionadores, 2 cremes e 1 protetor solar). Não havia saldo anterior para comparação. A IA organizou os dados; a contagem física e a aprovação final foram feitas pelo participante. [Ver as evidências](#etapa-3--aplicação-real-inventário-doméstico-inicial).
+
 ### Tarefa escolhida e natureza da aplicação
 
 Escolhi o planejamento de um turno de um centro de distribuição como **exercício acadêmico de delegação**, com priorização de pedidos, distribuição de funções, identificação de riscos e checkpoints. O segundo exercício aborda a análise documental de divergência de estoque. **Ambos utilizam dados fictícios** e não constituem execução física. Para complementar o requisito de tarefa real, o participante realizou uma **conferência doméstica inicial de cinco categorias de produtos**, documentada na seção **Etapa 3 — Aplicação real** abaixo. A execução física é declarada pelo participante; a IA apenas estruturou e analisou o relatório.
@@ -243,7 +253,7 @@ A IA produziu uma proposta com alocação hipotética de seis funções, cronogr
 
 ![Etapa 3 — Ficha de inventário doméstico com cinco categorias e total de 34 itens contabilizados](evidencias/teste3-ficha-inventario.png)
 
-*Ficha com os dados informados pelo participante e a conferência matemática. O total de 34 representa embalagens/itens registrados, não sabonetes individuais.*
+*Ficha com os dados informados pelo participante e a conferência matemática. Embora a captura utilize o termo “unidades”, o total de 34 representa **embalagens/itens registrados**, não 34 sabonetes individuais nem o total de unidades contidas nas embalagens.*
 
 ![Etapa 3 — Aprovação humana do inventário e observação sobre a embalagem aberta de sabonetes](evidencias/teste3-validacao-final.png)
 
