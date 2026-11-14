@@ -41,4 +41,6 @@ SKU CX-101: sistema 80 unidades, contagem física 76 unidades, endereço A-03. M
 
 **Resultado matemático esperado:** 76 − 80 = −4 unidades. A causa da diferença permanece indeterminada até a conferência.
 
-**Evidência do teste:** inserir posteriormente captura real da interação e anotar os ajustes realizados.
+**Evidências do Teste 2:** [aprovação do plano](../evidencias/teste2-aprovacao-plano.png) e [avaliação final](../evidencias/teste2-avaliacao-final.png). O teste foi acadêmico e recebeu aprovação com ressalvas; consulte o [relatório no README](../README.md#o-resultado).
+
+**Aplicação real complementar do Atalho 2:** [inventário doméstico inicial e validação humana](../README.md#etapa-3--aplicação-real-inventário-doméstico-inicial), com [ficha de inventário](../evidencias/teste3-ficha-inventario.png), [validação final](../evidencias/teste3-validacao-final.png) e [status do projeto](../evidencias/teste3-status-projeto.png). Como não havia saldo anterior, não foi calculada divergência.
